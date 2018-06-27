@@ -19,6 +19,14 @@ public class TbBrand implements Serializable {
 
     private static final long serialVersionUID = 1L;
 
+    public TbBrand() {
+    }
+
+    public TbBrand(String name, String firstChar) {
+        this.name = name;
+        this.firstChar = firstChar;
+    }
+
     public Long getId() {
         return id;
     }

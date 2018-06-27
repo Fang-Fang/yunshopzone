@@ -1,6 +1,7 @@
 package com.yunChina.mapper;
 
 import com.yunChina.pojo.TbBrand;
+import tk.mybatis.mapper.common.Mapper;
 
 import java.util.List;
 
@@ -9,6 +10,6 @@ import java.util.List;
  * Author: Fong.x
  * Desc:
  */
-public interface BrandMapper {
+public interface BrandMapper extends Mapper<TbBrand> {
     List<TbBrand> queryAll();
 }
